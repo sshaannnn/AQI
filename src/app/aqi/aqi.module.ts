@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { AqiRoutingModule } from './aqi-routing.module';
 import { AqiComponent } from './aqi/aqi.component';
+
+
 @NgModule({
   declarations: [AqiComponent],
   imports: [
