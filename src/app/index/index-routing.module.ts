@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AqiComponent } from './aqi/aqi.component';
 
+import { IndexComponent } from './index.component';
 
-const routes: Routes = [{ path: '', component: AqiComponent }];
+const routes: Routes = [{ path: '', component: IndexComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AqiRoutingModule { }
+export class IndexRoutingModule { }
