@@ -7,13 +7,11 @@ const routes: Routes = [
     path: 'AQI',
     component: AqiComponent
   },
-
   {
     path: '',
     redirectTo: '/AQI',
     pathMatch: 'full'
-  },
-  { path: 'index', loadChildren: () => import('./index/index.module').then(m => m.IndexModule) }
+  }
 ];
 
 @NgModule({

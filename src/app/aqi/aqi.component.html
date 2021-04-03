@@ -1,12 +1,12 @@
 <div class="container">
-  <div class="content">
+  <div class="container__content">
     <div class="title-box">
       <div class="left ">
         <div class="title">
           空氣品質指標
         </div>
         <select class="selectLocation">
-          <option value="" class=""> 請選擇地區</option>
+          <option value="0">請選擇地區</option>
           <option *ngFor="let city of cities" [value]="city">{{city}}</option>
         </select>
       </div>
@@ -24,12 +24,12 @@
           </thead>
           <tbody>
             <tr>
-              <td class="" bgcolor="#94F184">良好</td>
-              <td class="" bgcolor="#FFE694">普通</td>
-              <td class="" bgcolor="#FFAE69">對敏感族群不健康</td>
-              <td class="" bgcolor="#FF5757">對所有族群不健康</td>
-              <td class="" bgcolor="#9777FF">非常不健康</td>
-              <td class="" bgcolor="#AE1774">危害</td>
+              <td bgcolor="#94F184">良好</td>
+              <td bgcolor="#FFE694">普通</td>
+              <td bgcolor="#FFAE69">對敏感族群不健康</td>
+              <td bgcolor="#FF5757">對所有族群不健康</td>
+              <td bgcolor="#9777FF">非常不健康</td>
+              <td bgcolor="#AE1774">危害</td>
             </tr>
           </tbody>
         </table>
@@ -37,11 +37,11 @@
     </div>
   </div>
   <div>
-    <div class="footer">
-      <div class="sourse">
+    <div class="container__footer">
+      <div>
         資料來源：行政院環境保護署
       </div>
-      <div class="copyright">
+      <div>
         Copyright © 2021 ysshaannnn. All rights reserved.
       </div>
     </div>

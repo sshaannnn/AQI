@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ApiData } from './ApiData';
 @Component({
-  selector: 'app-index',
-  templateUrl: './index.component.html',
-  styleUrls: ['./index.component.scss']
+  selector: 'app-aqi',
+  templateUrl: './aqi.component.html',
+  styleUrls: ['./aqi.component.scss']
 })
-export class IndexComponent implements OnInit {
+export class AqiComponent implements OnInit {
 
   apiData: ApiData[];
   cities: string[];
@@ -36,7 +36,6 @@ export class IndexComponent implements OnInit {
       return acc;
     }, {});
     this.cities = Object.keys(cities);
-    console.log(this.cities);
 
   }
 }
